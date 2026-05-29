@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter  - Glosario </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.Css">
+</head>
+<body>
+
+    <header class="hero-section">
+        <div class="logo-container">
+            <span class="pulse-ring"></span>
+            <div class="tech-badge">FLUTTER ECOSYSTEM</div>
+        </div>
+        <h1>Conceptos Básicos</h1>
+        <p>Una guía interactiva visual para comprender la arquitectura de desarrollo multiplataforma.</p>
+    </header>
+
+    <main class="container">
+        
+        <h2 class="section-title">Ecosistema & Plataforma</h2>
+        <div class="grid-layout">
+            
+            <div class="card card-purple">
+                <div class="card-glow"></div>
+                <div class="card-header">
+                    <span class="badge">Core</span>
+                    <h3>SDK</h3>
+                </div>
+                <p>El <strong>Software Development Kit</strong> de Flutter es el conjunto completo de compiladores, herramientas y librerías provistos por Google. No es un simple framework; incluye el motor de renderizado de alto rendimiento y el compilador que traduce el código Dart directamente a instrucciones binarias nativas de cada procesador.</p>
+            </div>
+
+            <div class="card card-indigo">
+                <div class="card-glow"></div>
+                <div class="card-header">
+                    <span class="badge">Arquitectura</span>
+                    <h3>Desarrollo Mobile</h3>
+                </div>
+                <p>Disciplina enfocada en la creación de software para smartphones y tablets. Flutter redefine este ecosistema al permitir un enfoque de <strong>código único (Single Codebase)</strong>, donde los desarrolladores escriben una sola aplicación que se ejecuta de forma nativa e idéntica tanto en sistemas Android como en iOS.</p>
+            </div>
+
+            <div class="card card-magenta" style="grid-column: span 2;">
+                <div class="card-glow"></div>
+                <div class="card-header">
+                    <span class="badge badge-cmd">CLI Tools</span>
+                    <h3>Comandos Eficientes</h3>
+                </div>
+                <p>Instrucciones de consola nativas indispensables para optimizar la productividad y automatizar despliegues directamente desde terminales como GitHub Codespaces:</p>
+                <div class="terminal-box">
+                    <div class="terminal-line"><span class="cmd-cyan">flutter pub get</span> <span class="cmd-comment">// Sincroniza e instala las dependencias del pubspec.yaml</span></div>
+                    <div class="terminal-line"><span class="cmd-cyan">flutter doctor</span> <span class="cmd-comment">// Analiza el sistema local y reporta configuraciones faltantes</span></div>
+                    <div class="terminal-line"><span class="cmd-cyan">flutter build web</span> <span class="cmd-comment">// Compila una versión óptima para subir a GitHub Pages</span></div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">El Universo de los Widgets</h2>
+        <div class="grid-layout">
+            
+            <div class="card card-purple">
+                <div class="card-glow"></div>
+                <div class="card-header">
+                    <span class="badge">UI Base</span>
+                    <h3>Widgets</h3>
+                </div>
+                <p>En Flutter, <strong>todo es un widget</strong>. Son las piezas de rompecabezas estructurales e inmutables que componen la interfaz de usuario. Desde un simple bloque de texto o un botón, hasta los márgenes (Padding) y las estructuras de alineación (Center) se declaran y configuran mediante widgets.</p>
+            </div>
+
+            <div class="card card-indigo">
+                <div class="card-glow"></div>
+                <div class="card-header">
+                    <span class="badge">Estático</span>
+                    <h3>StatelessWidget</h3>
+                </div>
+                <p>Componentes visuales inmutables y sin memoria interna. Un <strong>StatelessWidget</strong> no cambia su apariencia de forma interna una vez construido; si requiere actualización, depende completamente de que su elemento padre le envíe datos nuevos y lo reconstruya desde el exterior. Ideal para títulos, iconos o tarjetas fijas.</p>
+            </div>
+
+            <div class="card card-magenta">
+                <div class="card-glow"></div>
+                <div class="card-header">
+                    <span class="badge">Dinámico</span>
+                    <h3>StatefulWidget</h3>
+                </div>
+                <p>Un widget dinámico estructurado en dos partes: la clase de configuración visual e inmutable, y una clase de <strong>Estado (State)</strong> persistente y mutable. Al invocar el método interno <code>setState()</code>, el widget redibuja automáticamente los elementos en pantalla para reflejar cambios interactivos del usuario en tiempo real.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Emily Muñoz- flutter.</p>
+    </footer>
+
+</body>
+</html>
